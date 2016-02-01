@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "sp_pos")
+set(sp_pos_MAINTAINER "paloma <paloma.sodhi@gmail.com>")
+set(sp_pos_DEPRECATED "")
+set(sp_pos_VERSION "0.0.0")
+set(sp_pos_BUILD_DEPENDS "message_generation" "mavros" "roscpp" "rospy" "std_msgs")
+set(sp_pos_RUN_DEPENDS "message_runtime" "mavros" "roscpp" "rospy" "std_msgs")
+set(sp_pos_BUILDTOOL_DEPENDS "catkin")

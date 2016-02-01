@@ -1,0 +1,8 @@
+prefix=/home/paloma/catkin_ws/mavros_ws/install
+
+Name: sp_pos
+Description: Description of sp_pos
+Version: 0.0.0
+Cflags: -I/home/paloma/catkin_ws/mavros_ws/install/include
+Libs: -L/home/paloma/catkin_ws/mavros_ws/install/lib 
+Requires: message_runtime

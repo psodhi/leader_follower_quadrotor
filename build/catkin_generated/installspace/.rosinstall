@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/paloma/catkin_ws/mavros_ws/install/setup.sh

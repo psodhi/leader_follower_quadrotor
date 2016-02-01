@@ -1,0 +1,32 @@
+roscore
+
+cd code/idea-IC-139.1117.1/bin
+sudo ./idea.sh
+
+cd code/qgroundcontrol-master/release
+sudo ./qgroundcontrol
+
+roslaunch mavros px4.launch
+
+<--ARM-->
+rosrun mavros mavsafety arm
+
+<-- rosserial_arduino -->
+rosrun rosserial_python serial_node.py _port:=/dev/ttyUSB0	
+
+cd catkin_ws/mavros_ws/src/sp_pos/scripts
+./llToUTM.py
+
+
+cd catkin_ws/mavros_ws/src/sp_pos/scripts
+./setpoint_demo_2.py
+
+rosrun mavros mavsys mode -c OFFBOARD
+
+
+Edison IP - pixhawk@192.168.43.203
+QGC UDP Connection - 192.168.43.203:14556
+sudo shutdown -h now
+
+
+rosrun nmea_navsat_driver nmea_serial_driver _port:=/dev/ttyUSB0 _baud:=9600

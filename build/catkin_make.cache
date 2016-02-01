@@ -1,0 +1,2 @@
+sp_pos
+-DCATKIN_DEVEL_PREFIX=/home/paloma/catkin_ws/mavros_ws/devel -DCMAKE_INSTALL_PREFIX=/home/paloma/catkin_ws/mavros_ws/install
